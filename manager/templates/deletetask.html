@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <h3>Are you sure you want to delete?</h3>
+        <br>
+        <button type="submit">YES</button>
+        <a href="{% url 'gg'  %}">NO</a>
+    </form>
+
+</body>
+
+</html>
